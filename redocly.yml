@@ -1,6 +1,6 @@
 apis:
   main:
-    root: OpenAPI/openapi.yml
+    root: openapi/openapi.yml
 
 extends:
   - recommended
