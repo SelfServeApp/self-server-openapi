@@ -2,6 +2,11 @@ name: Bundle API
 run-name: Bundling OpenAPI Spec
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'openapi/**'
 jobs:
   bundle_job:
     name: Bundle Job
