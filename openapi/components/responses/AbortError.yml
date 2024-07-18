@@ -1,0 +1,18 @@
+description: An error that conforms to Vapor's AbortError type.
+content:
+  application/json:
+    schema:
+      type: object
+      required:
+        - error
+      properties:
+        error:
+          type: boolean
+          enum:
+            - true
+        reason:
+          type: string
+          description: Describes the reason for the error.
+headers:
+  X-Self-Server-Error-Code:
+    $ref: ../headers/X-Self-Server-Error-Code.yml

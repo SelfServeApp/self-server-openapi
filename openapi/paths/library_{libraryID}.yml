@@ -1,0 +1,16 @@
+parameters:
+  - $ref: ../components/parameters/LibraryIDPathParam.yml
+get:
+  tags:
+    - library
+  summary: Get a specific library.
+  operationId: getLibrary
+  responses:
+    '200':
+      description: Successful operation.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/Library.yml
+    4XX:
+      $ref: ../components/responses/AbortError.yml

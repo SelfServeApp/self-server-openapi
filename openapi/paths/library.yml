@@ -1,0 +1,17 @@
+get:
+  tags:
+    - library
+  summary: List all libraries in the database.
+  operationId: listLibraries
+  responses:
+    '200':
+      description: Successful operation.
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: ../components/schemas/Library.yml
+    '401':
+      description: Unauthorized request.
+      $ref: ../components/responses/AbortError.yml

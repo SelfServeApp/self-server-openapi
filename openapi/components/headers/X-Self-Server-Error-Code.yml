@@ -1,0 +1,3 @@
+description: Self-Server-specific error code.
+schema:
+  type: integer

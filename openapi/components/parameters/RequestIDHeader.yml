@@ -1,0 +1,9 @@
+name: X-Request-Id
+in: header
+required: false
+description: >-
+  Defines a unique ID for the request. Should be generated client-side and
+  included if the client wants to keep track of the specific request.
+style: simple
+schema:
+  $ref: ../schemas/UUID.yml

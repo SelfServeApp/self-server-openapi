@@ -1,0 +1,12 @@
+description: A photo library associated with a specific device.
+type: object
+required:
+  - id
+  - name
+properties:
+  id:
+    $ref: ./UUID.yml
+  name:
+    type: string
+  latestChange:
+    $ref: ./LibraryChangeData.yml

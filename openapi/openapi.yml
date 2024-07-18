@@ -1,0 +1,39 @@
+openapi: 3.1.0
+info:
+  title: Self-Server REST API
+  description: Self-Server's REST/HTTP API.
+  version: 0.0.0
+  license:
+    name: Internal
+    url: https://valdman.works
+servers:
+  - url: http://{ip_address}:{port}
+    description: Local testing IP address and port number.
+    variables:
+      ip_address:
+        default: 127.0.0.1
+        description: Server IP address.
+      port:
+        default: '8080'
+        description: Server port number.
+tags:
+  - name: library
+    description: Endpoints for interacting with photo libraries.
+security:
+  - active_session_token: []
+paths:
+  /library:
+    $ref: paths/library.yml
+  /library/{libraryID}:
+    $ref: paths/library_{libraryID}.yml
+  /library/{libraryID}/transfer/stream-test:
+    $ref: paths/library_{libraryID}_transfer_stream-test.yml
+components:
+  securitySchemes:
+    active_session_token:
+      type: http
+      scheme: bearer
+      description: >-
+        A token generated at the start of a WebSocket connection with the
+        server, and invalidated when the connection ends.
+      bearerFormat: JWT

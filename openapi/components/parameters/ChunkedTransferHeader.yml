@@ -1,0 +1,9 @@
+name: Transfer-Encoding
+in: header
+required: true
+description: Specifies that the request body should be sent in chunks.
+style: simple
+schema:
+  type: string
+  enum:
+    - chunked

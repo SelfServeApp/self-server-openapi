@@ -1,0 +1,9 @@
+type: object
+properties:
+  latestState:
+    description: Base64-encoded data string.
+    type: string
+    format: byte
+  mostRecentStateChange:
+    type: string
+    format: date-time

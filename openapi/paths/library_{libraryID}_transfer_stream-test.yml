@@ -1,0 +1,18 @@
+post:
+  tags:
+    - library
+  summary: Test endpoint for uploading files.
+  operationId: fileUploadTest
+  parameters:
+    - $ref: ../components/parameters/LibraryIDPathParam.yml
+    - $ref: ../components/parameters/ChunkedTransferHeader.yml
+    - $ref: ../components/parameters/RequestIDHeader.yml
+  requestBody:
+    $ref: ../components/requestBodies/AssetTransfer.yml
+  responses:
+    '201':
+      description: Files were successfully uploaded.
+    4XX:
+      $ref: ../components/responses/AbortError.yml
+    5XX:
+      $ref: ../components/responses/AbortError.yml

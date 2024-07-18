@@ -1,0 +1,13 @@
+description: >-
+  Body containing library asset data being transferred between client and
+  server.
+required: true
+content:
+  multipart/form-data:
+    schema:
+      type: object
+      properties:
+        assets:
+          description: Array of assets to be transferred.
+          type: array
+          items: {}

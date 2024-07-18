@@ -1,0 +1,7 @@
+name: libraryID
+description: The UUID of a Library in the database.
+in: path
+required: true
+style: simple
+schema:
+  $ref: ../schemas/UUID.yml
