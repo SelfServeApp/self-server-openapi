@@ -23,4 +23,11 @@ jobs:
       # - name: Install Redocly
       #   run: npm ci
       # - run: redocly bundle openapi/openapi.json --output dist/openapi.json
-      - run: npx @redocly/cli bundle main -o ${{ github.workspace }}/dist/openapi.yml
+      - run: npx @redocly/cli bundle main -o dist/openapi.yml
+      - name: Commit file
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Updated bundled API spec."
+          git push
