@@ -23,4 +23,4 @@ jobs:
       # - name: Install Redocly
       #   run: npm ci
       # - run: redocly bundle openapi/openapi.json --output dist/openapi.json
-      - run: npx @redocly/cli bundle main -o dist/openapi.yml
+      - run: npx @redocly/cli bundle main -o ${{ github.workspace }}/dist/openapi.yml
