@@ -11,5 +11,7 @@ content:
       properties:
         assets:
           description: Array of assets to be transferred.
-          type: array
-          items: {}
+          type: string
+          contentEncoding: binary
+          # type: array
+          # items: {}
