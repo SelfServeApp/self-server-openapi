@@ -23,7 +23,7 @@ jobs:
           cache: 'npm'
           cache-dependency-path: '**/.github/workflows/*.yml'
       - run: npx @redocly/cli bundle main -o dist/openapi.yml
-      - name: Commit file
+      - name: Commit file if there are changes
         run: |
           if [[ `git status --porcelain` ]]; then
             git config user.name "github-actions[bot]"
