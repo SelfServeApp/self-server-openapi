@@ -1,4 +1,7 @@
 SelfServeApp/self-server-rest-client:
   - source: dist/openapi.yml
     dest: Sources/openapi.yml
+edonv/self-server:
+  - source: dist/openapi.yml
+    dest: Sources/OpenAPIClient/openapi.yml
 # eventually vapor app too so it can generate stubs
