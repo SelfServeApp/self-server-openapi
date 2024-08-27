@@ -5,7 +5,6 @@ post:
   operationId: fileUploadTest
   parameters:
     - $ref: ../components/parameters/LibraryIDPathParam.yml
-    - $ref: ../components/parameters/ChunkedTransferHeader.yml
     - $ref: ../components/parameters/RequestIDHeader.yml
   requestBody:
     $ref: ../components/requestBodies/AssetTransfer.yml
