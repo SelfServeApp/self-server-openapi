@@ -1,6 +1,6 @@
 SelfServeApp/self-server-rest-client:
   - source: dist/openapi.yml
     dest: Sources/openapi.yml
-edonv/self-server:
+SelfServeApp/self-server:
   - source: dist/openapi.yml
-    dest: Sources/OpenAPIClient/openapi.yml
+    dest: Sources/OpenAPIServerStubs/openapi.yml
