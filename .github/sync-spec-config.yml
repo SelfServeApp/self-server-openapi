@@ -1,6 +1,3 @@
-SelfServeApp/self-server-rest-client:
+SelfServeApp/self-server-openapi-swift:
   - source: dist/openapi.yml
     dest: Sources/openapi.yml
-SelfServeApp/self-server:
-  - source: dist/openapi.yml
-    dest: Sources/OpenAPIServerStubs/openapi.yml
