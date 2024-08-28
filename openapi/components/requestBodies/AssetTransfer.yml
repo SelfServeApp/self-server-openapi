@@ -45,9 +45,3 @@ content:
             required: true
             schema: 
               type: string
-          Content-Length:
-            description: The total size of the asset in bytes.
-            required: true
-            schema: 
-              type: integer
-              format: int64
