@@ -1,10 +1,8 @@
 name: Sync Spec File
 on: 
   push:
-    branches:
-      - 'main'
-    paths:
-      - 'dist/openapi.yml'
+    tags:
+      - '*'
   workflow_dispatch:
 jobs:
   sync_job:
