@@ -26,8 +26,8 @@ content:
     encoding:
       asset_chunk:
         headers:
-          X-Asset-Name:
-            description: The name of the asset this chunk is a part of.
+          X-Asset-ID:
+            description: The ID of the asset this chunk is a part of.
             required: true
             schema: 
               type: string
@@ -40,8 +40,8 @@ content:
             example: bytes=0-50
       asset_complete:
         headers:
-          X-Asset-Name:
-            description: The name of the asset completed.
+          X-Asset-ID:
+            description: The ID of the asset this chunk is a part of.
             required: true
             schema: 
               type: string
