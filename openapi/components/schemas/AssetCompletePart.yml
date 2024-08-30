@@ -1,0 +1,16 @@
+description: A part indicating that all the chunks of a file have been sent, including a digest describing the full contents of the asset transfered.
+type: object
+required: 
+  - digest
+  - digestKind
+properties: 
+  digest:
+    description: A hash digest of the completed asset.
+    type: string
+  digestKind:
+    description: The kind of digest used.
+    type: string
+    enum:
+      - md5
+      - sha256
+      - sha512
