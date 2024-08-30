@@ -9,7 +9,7 @@ post:
   requestBody:
     $ref: ../components/requestBodies/AssetTransfer.yml
   responses:
-    '201':
+    '200':
       description: Files were successfully uploaded.
     4XX:
       $ref: ../components/responses/AbortError.yml
