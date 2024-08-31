@@ -6,6 +6,7 @@ post:
   parameters:
     - $ref: ../components/parameters/LibraryIDPathParam.yml
     - $ref: ../components/parameters/RequestIDHeader.yml
+    - $ref: ../components/parameters/AssetTransferDigestKindHeader.yml
   requestBody:
     $ref: ../components/requestBodies/AssetTransfer.yml
   responses:

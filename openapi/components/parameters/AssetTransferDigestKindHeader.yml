@@ -1,0 +1,7 @@
+name: X-Digest-Kind
+in: header
+required: true
+description: Specifies the algorithm used to generate digests when transferring assets.
+style: simple
+schema: 
+  $ref: ../schemas/AssetDigestKind.yml
