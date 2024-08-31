@@ -39,6 +39,7 @@ content:
             schema: 
               type: string
       asset_complete:
+        contentType: application/json
         headers:
           X-Asset-ID:
             description: The ID of the asset this chunk is a part of.
