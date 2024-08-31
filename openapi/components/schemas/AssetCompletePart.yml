@@ -8,6 +8,3 @@ properties:
     description: A hash digest of the completed asset, with base64 encoding.
     type: string
     contentEncoding: base64
-  digestKind:
-    description: The kind of digest used.
-    $ref: AssetDigestKind.yml
