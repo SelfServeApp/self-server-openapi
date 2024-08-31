@@ -10,8 +10,4 @@ properties:
     contentEncoding: base64
   digestKind:
     description: The kind of digest used.
-    type: string
-    enum:
-      - md5
-      - sha256
-      - sha512
+    $ref: AssetDigestKind.yml
