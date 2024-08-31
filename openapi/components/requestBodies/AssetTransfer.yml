@@ -20,6 +20,7 @@ content:
           $ref: ../schemas/AssetCompletePart.yml
     encoding:
       asset_chunk:
+        contentType: application/octet-stream
         headers:
           X-Asset-ID:
             description: The ID of the asset this chunk is a part of.
