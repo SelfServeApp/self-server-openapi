@@ -1,0 +1,5 @@
+description: Files were successfully uploaded. Lists asset IDs by whether or it transferred successfully.
+content:
+  application/json:
+    schema: 
+      $ref: ../schemas/AssetTransferResponseBody.yml
