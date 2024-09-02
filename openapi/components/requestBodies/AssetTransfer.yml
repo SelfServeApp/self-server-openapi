@@ -36,7 +36,7 @@ content:
         contentType: application/json
         headers:
           X-Asset-ID:
-            description: The ID of the asset this chunk is a part of.
+            description: The ID of the asset that completed.
             $ref: ../headers/XAssetID.yml
           filename:
             description: Asset file name.
