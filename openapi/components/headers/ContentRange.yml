@@ -1,0 +1,4 @@
+schema: 
+  type: string
+  pattern: '^(bytes) (\d+-\d+)\/\d+$'
+example: bytes 200-1000/67589
