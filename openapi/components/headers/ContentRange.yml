@@ -1,5 +1,0 @@
-schema: 
-  type: string
-  format: contentrange
-  pattern: '^(bytes) (\d+-\d+)\/\d+$'
-example: bytes 200-1000/67589

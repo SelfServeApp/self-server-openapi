@@ -27,8 +27,9 @@ content:
             $ref: ../headers/XAssetID.yml
           Content-Range:
             description: The byte range of the chunk, and its full size.
-            $ref: ../headers/ContentRange.yml
             required: true
+            schema: 
+              $ref: ../schemas/ContentRangeHeaderValue.yml
           filename:
             description: Asset file name.
             $ref: ../headers/PartFilename.yml
