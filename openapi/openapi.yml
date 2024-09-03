@@ -32,6 +32,11 @@ paths:
     $ref: paths/library_{libraryID}_transfer_stream-test.yml
 components:
   securitySchemes:
+    server_control:
+      type: http
+      scheme: basic
+      description: >-
+        A username/password combo used to authenticate requests relating to the server itself, rather than pertaining to a library.
     active_session_token:
       type: http
       scheme: bearer
