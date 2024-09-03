@@ -15,4 +15,4 @@ content:
           description: Describes the reason for the error.
 headers:
   X-Self-Server-Error-Code:
-    $ref: ../headers/X-Self-Server-Error-Code.yml
+    $ref: ../headers/XSelfServerErrorCode.yml
