@@ -13,5 +13,8 @@ get:
             items:
               $ref: ../components/schemas/Library.yml
     '401':
-      description: Unauthorized request.
-      $ref: ../components/responses/AbortError.yml
+      $ref: ../components/responses/401UnauthorizedResponse.yml
+    '403':
+      $ref: ../components/responses/403ForbiddenResponse.yml
+    '500':
+      $ref: ../components/responses/GeneralError.yml
