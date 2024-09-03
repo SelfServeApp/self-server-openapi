@@ -1,0 +1,5 @@
+description: Request is not authorized appropriately to access this content.
+content:
+  application/json:
+    schema: 
+      $ref: ../schemas/AbortError.yml

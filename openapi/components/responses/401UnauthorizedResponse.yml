@@ -1,0 +1,4 @@
+description: Request is missing authentication.
+headers: 
+  WWW-Authenticate:
+    $ref: ../headers/WWWAuthenticate.yml

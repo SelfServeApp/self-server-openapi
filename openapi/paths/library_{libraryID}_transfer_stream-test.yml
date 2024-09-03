@@ -12,7 +12,9 @@ post:
   responses:
     '200':
       $ref: ../components/responses/AssetTransferResponse.yml
-    4XX:
-      $ref: ../components/responses/AbortError.yml
-    5XX:
-      $ref: ../components/responses/AbortError.yml
+    '401':
+      $ref: ../components/responses/401UnauthorizedResponse.yml
+    '403':
+      $ref: ../components/responses/403ForbiddenResponse.yml
+    '500':
+      $ref: ../components/responses/GeneralError.yml

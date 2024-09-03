@@ -1,0 +1,7 @@
+description: Describes the expected authentication.
+required: true
+schema: 
+  type: string
+  examples:
+    - 'Basic realm="server"'
+    - 'Bearer iss="self-server:session.token"'
