@@ -1,0 +1,8 @@
+description: A general response for general errors.
+content:
+  application/json:
+    schema:
+      $ref: ../schemas/AbortError.yml
+headers:
+  X-Self-Server-Error-Code:
+    $ref: ../headers/XSelfServerErrorCode.yml
