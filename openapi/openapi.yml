@@ -18,7 +18,7 @@ servers:
         description: Server port number.
 tags:
   - name: library
-    description: Endpoints for interacting with photo libraries.
+    description: Endpoints for interacting with photo libraries (each library refers to a single device's library).
 security:
   - active_session_token: []
 paths:
