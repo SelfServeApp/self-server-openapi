@@ -17,6 +17,8 @@ servers:
         default: '8080'
         description: Server port number.
 tags:
+  - name: server
+    description: Endpoints for interacting and managing the server itself.
   - name: library
     description: Endpoints for interacting with photo libraries (each library refers to a single device's library).
 security:
