@@ -24,6 +24,8 @@ tags:
 security:
   - active_session_token: []
 paths:
+  /server:
+    $ref: paths/server.yml
   /library:
     $ref: paths/library.yml
   /library/{libraryID}:
