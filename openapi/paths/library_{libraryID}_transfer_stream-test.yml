@@ -13,6 +13,6 @@ post:
     '200':
       $ref: ../components/responses/AssetTransferResponse.yml
     4XX:
-      $ref: ../components/responses/AbortError.yml
+      $ref: ../components/responses/GeneralError.yml
     5XX:
-      $ref: ../components/responses/AbortError.yml
+      $ref: ../components/responses/GeneralError.yml
