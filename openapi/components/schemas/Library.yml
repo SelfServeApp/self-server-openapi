@@ -9,10 +9,7 @@ properties:
     readOnly: true
     $ref: ./UUID.yml
   name:
-    description: A user-facing name for the library/device.
-    type: string
-    examples:
-      - "John's iPhone 14"
+    $ref: LibraryName.yml
   latestChange:
     description: An object describing the latest update state of the on-device library.
     $ref: LibraryChangeData.yml
