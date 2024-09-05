@@ -3,7 +3,7 @@ properties:
   latestState:
     description: Base64-encoded data string.
     type: string
-    format: byte
+    contentEncoding: base64
   mostRecentStateChange:
     type: string
     format: date-time
