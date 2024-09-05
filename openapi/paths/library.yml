@@ -28,3 +28,17 @@ post:
     - server_control: []
   requestBody: 
     $ref: ../components/requestBodies/NewLibrary.yml
+  responses: 
+    '201':
+      description: New library was created and added to the server.
+      content:
+        application/json:
+          schema: 
+            $ref: ../components/schemas/Library.yml
+    '401':
+      $ref: ../components/responses/401UnauthorizedResponse.yml
+    '409':
+      description: Indicates that the new library could not be created, as there is already a library with this name or device ID.
+      $ref: ../components/responses/GeneralError.yml
+    '500':
+      $ref: ../components/responses/GeneralError.yml
