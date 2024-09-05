@@ -3,3 +3,6 @@ content:
   application/json:
     schema: 
       $ref: ../schemas/AbortError.yml
+headers:
+  X-Self-Server-Error-Code:
+    $ref: ../headers/XSelfServerErrorCode.yml
