@@ -26,3 +26,5 @@ post:
   operationId: newLibrary
   security: 
     - server_control: []
+  requestBody: 
+    $ref: ../components/requestBodies/NewLibrary.yml
