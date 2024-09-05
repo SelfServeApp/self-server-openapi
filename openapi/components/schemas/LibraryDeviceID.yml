@@ -1,0 +1,5 @@
+description: An ID referring to the specific device this library refers to. It comes from a device's `identifierForVendor`. This property on-device might change if the Self-Serve app is uninstalled and reinstalled from the device, so it might need to be updated.
+$ref: ./UUID.yml
+externalDocs: 
+  description: See more info on the ins and outs of `identifierForVendor`.
+  url: https://developer.apple.com/documentation/uikit/uidevice/1620059-identifierforvendor
