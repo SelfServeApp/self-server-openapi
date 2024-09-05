@@ -15,4 +15,4 @@ properties:
       - "John's iPhone 14"
   latestChange:
     description: An object describing the latest update state of the on-device library.
-    $ref: ./LibraryChangeData.yml
+    $ref: LibraryChangeData.yml
