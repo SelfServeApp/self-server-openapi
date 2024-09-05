@@ -18,3 +18,11 @@ get:
       $ref: ../components/responses/403ForbiddenResponse.yml
     '500':
       $ref: ../components/responses/GeneralError.yml
+
+post:
+  tags: 
+    - library
+  summary: Add new device library.
+  operationId: newLibrary
+  security: 
+    - server_control: []
