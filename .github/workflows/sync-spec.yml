@@ -3,8 +3,8 @@ on:
   push:
     tags:
       - '*'
-    branches:
-      - main
+    paths:
+      - 'openapi/**'
   workflow_dispatch:
 jobs:
   sync_job:
