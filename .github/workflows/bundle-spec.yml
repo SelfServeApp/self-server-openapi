@@ -7,6 +7,8 @@ on:
       - main
     paths:
       - 'openapi/**'
+env:
+  BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
 jobs:
   bundle_job:
     name: Bundle Job
@@ -16,6 +18,8 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
+        with:
+          ref: ${{ env.BRANCH_NAME }}
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
