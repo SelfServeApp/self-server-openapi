@@ -24,14 +24,14 @@ tags:
 security:
   - active_session_token: []
 paths:
-  /server:
-    $ref: paths/server.yml
-  /library:
-    $ref: paths/library.yml
-  /library/{libraryID}:
-    $ref: paths/library_{libraryID}.yml
-  /library/{libraryID}/transfer/stream-test:
-    $ref: paths/library_{libraryID}_transfer_stream-test.yml
+  /servers:
+    $ref: paths/servers.yml
+  /libraries:
+    $ref: paths/libraries.yml
+  /libraries/{libraryID}:
+    $ref: paths/libraries_{libraryID}.yml
+  /libraries/{libraryID}/transfer/stream-test:
+    $ref: paths/libraries_{libraryID}_transfer_stream-test.yml
 components:
   securitySchemes:
     server_control:
