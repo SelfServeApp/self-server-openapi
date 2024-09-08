@@ -35,6 +35,9 @@ post:
         application/json:
           schema: 
             $ref: ../components/schemas/Library.yml
+    '400':
+      description: Library ID in request is not a valid UUID.
+      $ref: ../components/responses/GeneralError.yml
     '401':
       $ref: ../components/responses/401UnauthorizedResponse.yml
     '409':
