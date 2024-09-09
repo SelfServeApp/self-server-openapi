@@ -1,0 +1,18 @@
+get:
+  tags:
+    - server
+  summary: Get server info.
+  operationId: getServerInfo
+  security: 
+    - server_control: []
+  responses: 
+    '200':
+      description: Returned server info.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/ServerObject.yml
+    '401':
+      $ref: ../components/responses/401UnauthorizedResponse.yml
+    '500':
+      $ref: ../components/responses/GeneralError.yml

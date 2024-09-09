@@ -1,9 +1,15 @@
 type: object
+required: 
+  - token
+  - timestamp
 properties:
-  latestState:
-    description: Base64-encoded data string.
+  token:
+    description: A token that refers to the latest state of the on-device library, encoded as base64.
     type: string
-    format: byte
-  mostRecentStateChange:
+    contentEncoding: base64
+    externalDocs: 
+      url: https://developer.apple.com/documentation/photokit/phpersistentchangetoken
+  timestamp:
+    description: The date and time of the most recent completed library sync.
     type: string
     format: date-time

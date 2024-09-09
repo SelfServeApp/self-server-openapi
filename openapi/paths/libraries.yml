@@ -1,0 +1,54 @@
+get:
+  tags:
+    - library
+  summary: List all libraries in the database.
+  operationId: listLibraries
+  parameters:
+    - name: deviceId
+      in: query
+      description: Filters returned libraries by the provided deviceId.
+      required: false
+      schema: 
+        $ref: ../components/schemas/LibraryDeviceID.yml
+  responses:
+    '200':
+      description: Successful operation.
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: ../components/schemas/Library.yml
+    '401':
+      $ref: ../components/responses/401UnauthorizedResponse.yml
+    '403':
+      $ref: ../components/responses/403ForbiddenResponse.yml
+    '500':
+      $ref: ../components/responses/GeneralError.yml
+
+post:
+  tags: 
+    - library
+  summary: Add new device library.
+  operationId: newLibrary
+  security: 
+    - server_control: []
+  requestBody: 
+    $ref: ../components/requestBodies/NewLibrary.yml
+  responses: 
+    '201':
+      description: New library was created and added to the server.
+      content:
+        application/json:
+          schema: 
+            $ref: ../components/schemas/Library.yml
+    '400':
+      description: Library ID in request is not a valid UUID.
+      $ref: ../components/responses/GeneralError.yml
+    '401':
+      $ref: ../components/responses/401UnauthorizedResponse.yml
+    '409':
+      description: Indicates that the new library could not be created, as there is already a library with this name or device ID.
+      $ref: ../components/responses/GeneralError.yml
+    '500':
+      $ref: ../components/responses/GeneralError.yml

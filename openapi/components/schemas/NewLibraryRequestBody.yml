@@ -1,0 +1,9 @@
+type: object
+required: 
+  - name
+  - deviceId
+properties:
+  name:
+    type: string
+  deviceId:
+    $ref: LibraryDeviceID.yml

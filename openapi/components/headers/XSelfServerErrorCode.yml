@@ -1,3 +1,4 @@
 description: Self-Server-specific error code.
+required: true
 schema:
   type: integer

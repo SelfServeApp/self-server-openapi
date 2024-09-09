@@ -17,19 +17,28 @@ servers:
         default: '8080'
         description: Server port number.
 tags:
+  - name: server
+    description: Endpoints for interacting and managing the server itself.
   - name: library
     description: Endpoints for interacting with photo libraries (each library refers to a single device's library).
 security:
   - active_session_token: []
 paths:
-  /library:
-    $ref: paths/library.yml
-  /library/{libraryID}:
-    $ref: paths/library_{libraryID}.yml
-  /library/{libraryID}/transfer/stream-test:
-    $ref: paths/library_{libraryID}_transfer_stream-test.yml
+  /servers:
+    $ref: paths/servers.yml
+  /libraries:
+    $ref: paths/libraries.yml
+  /libraries/{libraryID}:
+    $ref: paths/libraries_{libraryID}.yml
+  /libraries/{libraryID}/transfer/stream-test:
+    $ref: paths/libraries_{libraryID}_transfer_stream-test.yml
 components:
   securitySchemes:
+    server_control:
+      type: http
+      scheme: basic
+      description: >-
+        A username/password combo used to authenticate requests relating to the server itself, rather than pertaining to a library.
     active_session_token:
       type: http
       scheme: bearer

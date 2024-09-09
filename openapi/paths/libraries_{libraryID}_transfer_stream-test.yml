@@ -12,6 +12,9 @@ post:
   responses:
     '200':
       $ref: ../components/responses/AssetTransferResponse.yml
+    '400':
+      description: Request content is invalid in some way.
+      $ref: ../components/responses/GeneralError.yml
     '401':
       $ref: ../components/responses/401UnauthorizedResponse.yml
     '403':
