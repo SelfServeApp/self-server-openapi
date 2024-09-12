@@ -18,6 +18,7 @@ post:
     '401':
       $ref: ../components/responses/401UnauthorizedResponse.yml
     '403':
-      $ref: ../components/responses/403ForbiddenResponse.yml
+      description: Request is not authorized appropriately to access this library.
+      $ref: ../components/responses/GeneralError.yml
     '500':
       $ref: ../components/responses/GeneralError.yml
