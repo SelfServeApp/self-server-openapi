@@ -3,6 +3,8 @@ get:
     - library
   summary: List all libraries in the database.
   operationId: listLibraries
+  security: 
+    - server_control: []
   parameters:
     - name: deviceId
       in: query
