@@ -2,7 +2,6 @@ description: A part indicating that all the chunks of a file have been sent, inc
 type: object
 required: 
   - digest
-  - digestKind
 properties: 
   digest:
     description: A hash digest of the completed asset, with base64 encoding.
