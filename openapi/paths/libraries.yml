@@ -51,7 +51,6 @@ post:
     '401':
       $ref: ../components/responses/401UnauthorizedResponse.yml
     '409':
-      description: Indicates that the new library could not be created, as there is already a library with this name or device ID.
-      $ref: ../components/responses/GeneralError.yml
+      $ref: ../components/responses/409ConflictingLibraryResponse.yml
     '500':
       $ref: ../components/responses/GeneralError.yml

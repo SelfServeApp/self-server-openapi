@@ -1,0 +1,13 @@
+description: Indicates that the new library could not be created, as there is already a library with this name or device ID. It will also include the existing library.
+content:
+  application/json:
+    schema:
+      type: object
+      required: 
+        - matchingLibrary
+      properties:
+        matchingLibrary:
+          $ref: ../schemas/Library.yml
+headers:
+  X-Self-Server-Error-Code:
+    $ref: ../headers/XSelfServerErrorCode.yml
