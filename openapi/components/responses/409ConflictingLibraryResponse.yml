@@ -4,8 +4,14 @@ content:
     schema:
       type: object
       required: 
+        - conflict
         - matchingLibrary
       properties:
+        conflict:
+          type: string
+          enum:
+            - libraryName
+            - deviceID
         matchingLibrary:
           $ref: ../schemas/Library.yml
 headers:
